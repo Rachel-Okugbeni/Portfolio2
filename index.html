@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/541ebc2f3e.js"></script>
+    <title>Rachel Okugbeni - Web Developer</title>
+</head>
+<body>
+    <div class="page-container">
+    <header class="navBar">
+        <div class="name"><a href="#" class="link">Rachel Okugbeni</a></div>
+        <nav>
+            <ul>
+                <li><a href="#contact" class="link">Contact</a></li>
+                <li><a href="https://github.com/Rachel-Okugbeni" class="link" id="github" target="_blank"  aria-label="GitHub"><i aria-hidden="true" class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/rachelokugbeni" class="link" id="linkedin" target="_blank"  aria-label="LinkedIn"><i aria-hidden="true" class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-wrap">
+        <div class="about">
+            <h1>About Me</h1>
+            <p>Frontend developer based in London passionate about making responsive and accessible websites</p>
+        </div>
+        <div class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="projectBlock" id="project1">
+                    <div class="product-img">
+                       <a href="https://maisonfleurie.netlify.app" target="blank"><img src="assets/Maison Fleurie.png" alt="Screenshot of Maison Fleurie project"></a>
+                    </div>
+                    <div class="project-description">
+                        <h3>Maison Fleurie</h3>
+                        <p>Concept site for an online jewellery and accessory store. Allows for items to be added, updated and removed from basket and ability to add coupon codes.</p>
+                        <p>
+                            Created using HTML5, SASS and vanilla JavaScript
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://maisonfleurie.netlify.app"  target="_blank" class="view">Live</a>
+                        <a href="https://github.com/Rachel-Okugbeni/Boutique"  target="_blank" class="view">Code</a>
+                    </div>
+                </div>
+
+                <div class="projectBlock" id="project2">
+                    <div class="product-img">
+                        <!-- <a href="https://maisonfleurie.netlify.app" target="_blank"><img src="assets/Maison Fleurie.jpg" alt="Screenshot of Maison Fleurie project"></a> -->
+                     </div>
+                    <div class="project-description">
+                        <h3>Morgan's Cakes *WIP</h3>
+                        <p>Website for nephew's homemade cake business</p>
+                        <p>
+                            Created using HTML5 and SASS
+                        </p>
+                    </div>      
+                    <div class="project-links">
+                        <a href=""  target="_blank" class="view">Live</a>
+                        <a href=""  target="_blank" class="view">Code</a>
+                    </div>
+                </div>
+
+                <div class="projectBlock" id="projec3">
+                    <div class="product-img">
+                        <a href="https://daisychain.netlify.app" target="_blank"><img src="assets/Daisy Chain.png" alt="Screenshot of Daisy Chain project"></a>
+                     </div>
+                     <div class="project-description">
+                        <h3>Daisy Chain Salon</h3>
+                        <p>Concept site for a hair salon</p>
+                        <p>
+                            Created using HTML5, SASS and jQuery lightbox library
+                        </p>
+                    </div>   
+                    <div class="project-links">
+                        <a href="https://daisychain.netlify.app" target="_blank" class="view">Live</a>
+                        <a href="https://github.com/Rachel-Okugbeni/daisychain" target="_blank" class="view">Code</a>
+                    </div>             
+                </div>
+                
+                <div class="projectBlock" id="project4">
+                    <div class="product-img">
+                        <a href="https://rachel-okugbeni.github.io/Pokemon-Memory-Game" target="_blank"><img src="assets/Pokemon Memory.png" alt="Screenshot of Pokemon Memory Game project"></a>
+                     </div>
+                     <div class="project-description">
+                        <h3>Pokemon Memory Game</h3>
+                        <p>Simple memory game featuring a 60s countdown timer and score</p>
+                        <p>
+                            Created using mostly vanilla JavaScript plus HTML5 and CSS3
+                        </p>
+                    </div>   
+                    <div class="project-links">
+                        <a href="https://rachel-okugbeni.github.io/Pokemon-Memory-Game" target="_blank" class="view">Live</a>
+                        <a href="https://github.com/Rachel-Okugbeni/Pokemon-Memory-Game" target="_blank" class="view">Code</a>
+                    </div>        
+                </div>
+            </div>
+        </div>
+            <div class="contact-form" id="contact">                
+                <h2>Email Me</h2>
+                <form action="POST" data-netlify="true" name="contactForm">
+                    <fieldset>
+                        <div class="row">
+                            <label for="name" class="visuallyhidden">Name</label>
+                            <input type="text" placeholder="Name" name="name" id="name" required>
+                            <label for="email" class="visuallyhidden">Email</label>
+                            <input type="text" placeholder="E-mail" name="email" id="email" required>
+                            <label for="subject" class="visuallyhidden">Subject</label>
+                            <input type="text" placeholder="Subject" name="subject" id="subject" required>
+                        </div>
+                        <div class="row">
+                            <label for="message" class="visuallyhidden">Message</label>
+                            <textarea type="text" placeholder="Message" name="message" id="message" cols="30" rows="5" required></textarea>
+                        </div>                        
+                    </fieldset>
+                    <button type="submit" name="submit" value="Submit">SEND EMAIL</button>
+                </form>
+            </div>
+                    <a href="#" id="backToTop" title="Back To Top"><i class="fas fa-arrow-circle-up"></i></a>
+    </div>
+    <footer>
+        Rachel Okugbeni  &#169 2020
+
+    </footer>
+</div>
+</body>
+</html>

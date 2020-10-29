@@ -1,0 +1,175 @@
+/* FONT IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+// Variables
+$font-family: 'Roboto', sans-serif;
+$light-shade: #dcdbea;
+$dark-shade: #4d4d4e;
+$pink-accent: #f9d4ce;
+$green-accent: rgba(218, 231, 206, 0.85);
+$blue-accent: #cedde5;
+
+/* GLOBAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/assets/memphis-colorful.png);
+    font-family: $font-family;
+    font-size: 16px;
+    text-align: center;
+    color: $dark-shade;
+}
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+.content-wrap {
+    padding-bottom: 5rem; 
+}
+
+footer {
+    background-color: $blue-accent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+}
+
+/* GLOBAL LINK STYLING */
+
+nav {
+    text-align: right;
+}
+li {
+    display: inline-block;
+    margin: 0 5px;
+}
+a {
+    text-decoration: none;
+    color: $dark-shade;
+    &:hover {
+        font-size: larger;
+        line-height:12pt;
+    }
+}
+
+/* TOP NAV BAR */
+.navBar {
+    background-color: $pink-accent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 1px 1px 5px grey;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/*MAIN CONTENT */
+
+/*ABOUT SECTION */
+.about {
+    background-color: $green-accent;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* PROJECT SECTION */
+.projects {
+    margin: 20px 0px;
+}
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.projectBlock {
+    width: 300px;
+    background-color: $light-shade;
+    color: $dark-shade;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    box-shadow: 1px 1px 5px grey;
+    img {
+        max-width: 300px;
+        box-shadow: 1px 1px 2px grey;
+    }
+}
+.project-description {
+    padding: 5px;
+}
+/* LINKS TO LIVE SITE & CODE */
+.view {
+    margin: 5px;
+    font-weight: bold;
+}
+
+/* CONTACT SECTION */
+.contact-form {
+    background-color: $pink-accent;
+    padding: 10px;
+    width: 40vw;
+    min-width: 280px;
+    margin: auto;
+    box-shadow: 1px 1px 5px grey;
+    input,
+    textarea,
+    button {
+        font-family: inherit;
+        border: 1px solid transparent;
+        color: inherit;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 2px;
+        &:focus {
+            background-color: $blue-accent;
+        }
+    }
+    fieldset {
+        border: none;
+    }
+}
+/* VISUALLY HIDE FORM LABELS */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* BACK TO TOP BUTTON FOR MOBILE */
+.fa-arrow-circle-up {
+    color: $dark-shade;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    z-index: 1;
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .fa-arrow-circle-up {
+        display: block;
+    }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    html,
+    body {
+      scroll-behavior: smooth;
+    }
+  }
