@@ -134,6 +134,13 @@ a {
             background-color: $blue-accent;
         }
     }
+    button {
+        background-color: $blue-accent;
+        &:hover {
+            cursor: pointer;
+            border: 1px solid $dark-shade;
+        }
+    }
     fieldset {
         border: none;
     }

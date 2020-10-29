@@ -161,6 +161,15 @@ a:hover {
   background-color: #cedde5;
 }
 
+.contact-form button {
+  background-color: #cedde5;
+}
+
+.contact-form button:hover {
+  cursor: pointer;
+  border: 1px solid #4d4d4e;
+}
+
 .contact-form fieldset {
   border: none;
 }
