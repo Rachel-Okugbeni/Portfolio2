@@ -194,11 +194,14 @@ a:hover {
   right: 0;
   margin: 15px;
   z-index: 1;
+}
+
+#backToTop {
   display: none;
 }
 
 @media only screen and (max-width: 768px) {
-  .fa-arrow-circle-up {
+  #backToTop {
     display: block;
   }
 }
