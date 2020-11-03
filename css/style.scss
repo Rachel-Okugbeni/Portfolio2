@@ -104,6 +104,7 @@ a {
         box-shadow: 1px 1px 2px grey;
     }
 }
+
 .project-description {
     padding: 5px;
 }
@@ -165,11 +166,14 @@ a {
     right: 0;
     margin: 15px;
     z-index: 1;
+}
+
+#backToTop {
     display: none;
 }
 
 @media only screen and (max-width: 768px) {
-    .fa-arrow-circle-up {
+    #backToTop {
         display: block;
     }
 }
